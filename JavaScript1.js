@@ -93,7 +93,45 @@ if(x<y){
     console.log("It is fale")
 }
 
-// Comparison operators
+// Logical Operators
+
+var a=20;
+var b=10;
+var c=5;
+
+if(a==10 && a==b){
+    console.log("It is good");
+}else if(a<10 || c>b){
+    console.log("It is ok");
+}else if(a!=c){
+    console.log("It is nomal")
+}else{
+    console.log("The end");
+}
 
 
+// Switch case
+
+var name1="Kasun";
+var job="Professor";
+
+switch(job.toLocaleLowerCase()){
+    case'teacher':
+        console.log(name1+" is a Teacher");
+       break;
+    
+    case'doctor':
+    case'professor':
+        console.log(name1+" is a Doctor");
+        break;
+    default:
+        console.log(name1+" does something");
+        break;
+            
+}
+
+console.log((10).toString(10));  //decimal no to decimal String
+console.log((10).toString(2));   // decimal no to binary String
+console.log((0b11110).toString(10)); // baibary no to decimal no
+console.log(parseInt("0542",8));  // octal to decimals
 
